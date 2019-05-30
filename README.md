@@ -1,4 +1,4 @@
-# The Controller for a 3D Quadrotor in C++ Project Readme #
+# The Controller for a 3D Quadrotor in C++ #
 
 This is the readme for the C++ project.
 
