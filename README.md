@@ -144,7 +144,7 @@ Therefore, if the mass doesn't match the actual mass of the quad, it'll fall dow
 
 ### Scenario 1_Intro.
 
-With the proper mass, your simulation should look a little like this:
+With the proper mass, our simulation look like this:
 
 <p align="center">
 <img src="result-animations/scenario-1.gif" width="500"/>
@@ -185,7 +185,7 @@ momentCmd = V3F(Ixx,Iyy,Izz) * kpPQR * (pqrCmd-pqr);
  ```
  - Tune `kpPQR` to `= 92, 92` in `QuadControlParams.txt` to get the vehicle to stop spinning quickly but not overshoot
 
-I can see the rotation of the vehicle about roll (omega.x) get controlled to 0 while other rates remain zero.  Note that the vehicle will keep flying off quite quickly, since the angle is not yet being controlled back to 0.  Also note that some overshoot will happen due to motor dynamics!.
+I can see the rotation of the vehicle about roll (omega.x) get controlled to 0 while other rates remain zero.  
 
 2. Implement roll / pitch control
 We won't be worrying about yaw just yet.
@@ -319,7 +319,7 @@ In this part, we will explore some of the non-idealities and robustness of a con
 
 ### Tracking trajectories ###
 
-Now that we have all the working parts of a controller, we put it all together and test it's performance once again on a trajectory.  For this simulation, you will use `Scenario 5`.  
+Now that we have all the working parts of a controller, we put it all together and test it's performance once again on a trajectory.  For this simulation, we will use `Scenario 5`.  
 <p align="center">
 <img src="result-animations/scenario-52.gif" width="500"/>
 </p>
